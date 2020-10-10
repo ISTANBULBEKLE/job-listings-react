@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../images/faceit.svg";
 
 const JobInfo = ({ item }) => {
   return (

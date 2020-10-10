@@ -1,21 +1,21 @@
 import React from "react";
 import Logo from "../images/faceit.svg";
 
-const JobInfo = () => {
+const JobInfo = ({ item }) => {
   return (
     <div className="job-info">
-      <img className="job-image" src={Logo} alt="logo" />
+      <img className="job-image" src={item.logo} alt="logo" />
       <div className="job-details">
         <div className="job-domain">
-          <p>Photo-snap</p>
-          <p>New</p>
-          <p>Feature</p>
+          <p className="job-info-feature-1">{item.company}</p>
+          {item.new ? <p className="job-info-feature-2">NEW</p> : ""}
+          {item.featured ? <p className="job-info-feature-3">FEATURED</p> : ""}
         </div>
-        <h2 className="job-position">Senior Frontend Developer</h2>
+        <h2 className="job-position">{item.position}</h2>
         <ul className="job-lists">
-          <li>Id Go</li>
-          <li>Full Title</li>
-          <li>Account</li>
+          <li>{item.postedAt}</li>
+          <li>{item.contract}</li>
+          <li>{item.location}</li>
         </ul>
       </div>
     </div>

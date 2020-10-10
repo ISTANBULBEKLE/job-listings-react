@@ -9,7 +9,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Job Listing React Project </h1>
       <Header />
       <Main />
     </div>

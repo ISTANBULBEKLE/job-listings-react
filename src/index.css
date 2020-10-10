@@ -1,3 +1,13 @@
+
+:root{
+  --de-saturated-dark-cyan: hsl(180, 29%, 50%);
+  --background: hsl(180, 52%, 96%);
+  --filter-tablets: hsl(180, 31%, 95%);
+  --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --very-dark-grayish-cyan: hsl(180, 14%, 20%);
+
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +15,48 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.header-image{
+  background-color: var(--de-saturated-dark-cyan);
+  width:100%;
+}
+
+.job-card{
+  width: 70%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 5px var(--filter-tablets);
+}
+
+.main-container{
+  display:flex;
+  justify-content: center;
+  margin-top:100px;
+}
+
+.job-info{
+  display:flex;
+  align-items:center;
+
+}
+
+.job-domain{
+  display:flex;
+}
+.job-domain p{
+  margin-right:20%;
+}
+.job-lists{
+  display:flex;
+  justify-content:space-between;
+  padding:0px;
+}
+.job-lists li:first-child{
+list-style-type: none;
 }

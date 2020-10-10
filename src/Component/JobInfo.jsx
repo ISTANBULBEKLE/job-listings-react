@@ -1,12 +1,13 @@
 import React from "react";
-import Logo from '../images/faceit.svg'
+import Logo from "../images/faceit.svg";
+
 const JobInfo = () => {
   return (
     <div className="job-info">
       <img className="job-image" src={Logo} alt="logo" />
       <div className="job-details">
         <div className="job-domain">
-          <p>Photosnap</p>
+          <p>Photo-snap</p>
           <p>New</p>
           <p>Feature</p>
         </div>

@@ -111,4 +111,28 @@ margin-right:20px;
   padding:5px 10px;
   border-radius: 5px;
 }
-
+.search{
+  display:flex;
+  min-height:100px;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  margin:-175px auto 100px auto;
+  width: 75%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 5px var(--filter-tablets);
+  padding:20px;
+}
+.close-btn{
+  background-color: var(--very-dark-grayish-cyan);
+  color:white;
+  margin:0;
+}
+.filter-btn{
+  display:flex;
+  margin:20px;
+}
+.search .job-btn{
+  margin:0;
+}

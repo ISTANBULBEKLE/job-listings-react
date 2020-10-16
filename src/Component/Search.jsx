@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Search = () => {
+const Search = ({getLanguages}) => {
   const languageArray = [
     "HTML",
     "Frontend",
@@ -16,12 +16,16 @@ const Search = () => {
 
   const [languages, setLanguages] = useState(languageArray);
 
+
+
   function handleCloseBtn(e) {
     const itemToBeRemoved = e.currentTarget.previousSibling.innerHTML;
     let newList = languages.filter((lan) => itemToBeRemoved !== lan);
     setLanguages(newList);
   }
 
+    getLanguages(languages);
+    
   return (
     <div className="search">
       {languages.map((language) => {
